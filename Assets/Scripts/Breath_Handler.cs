@@ -9,7 +9,6 @@ public class Breath_Handler : MonoBehaviour
     //GameObject vars
     private Rhythm_Behavior rhythm_behavior;
     private Boat_Behavior boat_behavior;
-    private Player_State_Behavior player_state_behavior;
 
     //number vars
     [SerializeField] private float breath_amount;
@@ -22,9 +21,6 @@ public class Breath_Handler : MonoBehaviour
 
         //find boat_behavior
         boat_behavior = GameObject.FindWithTag("Player_Boat_Tag").GetComponent<Boat_Behavior>();
-
-        //find player_state_behavior
-        player_state_behavior = GameObject.FindWithTag("Player_Boat_Tag").GetComponent<Player_State_Behavior>();
     }
 
     void Update()
@@ -67,13 +63,6 @@ public class Breath_Handler : MonoBehaviour
                 {
                     //move boat by percentage of breath ammount divided by in_time
                     boat_behavior.Move_Boat(breath_amount / Rhythm_Behavior.in_time);
-
-                    //if current state is STRESS then...
-                    if(Player_State_Behavior.cur_player_state == Player_State.STRESS)
-                    {
-                        //change health by percentage of breath ammount divided by in_time
-                        player_state_behavior.Change_Health(breath_amount / Rhythm_Behavior.in_time);
-                    }
                 }
 
                 //set breath_amount to 0f
