@@ -3,18 +3,23 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Player_Boat_Tag
+  - Pause_Menu_Tag
+  - Pause_Button_Tag
+  - Manager_Tag
+  - Inner_Circle_Tag
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Checkpoints
   - Water
   - UI
-  - Operator Cards
-  - Operand Cards
-  - Operator Slots
-  - Operand Slots
+  - ScenarioTriggers
+  - PlayerBoat
+  - 
+  - 
   - 
   - 
   - 
@@ -38,9 +43,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: text
-    uniqueID: 945691043
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

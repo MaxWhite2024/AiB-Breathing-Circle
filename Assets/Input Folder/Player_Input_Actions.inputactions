@@ -1,0 +1,65 @@
+{
+    "name": "Player_Input_Actions",
+    "maps": [
+        {
+            "name": "Gameplay Actions",
+            "id": "0f9c241c-f540-4adb-a3da-20b33dac2efe",
+            "actions": [
+                {
+                    "name": "Breath In",
+                    "type": "Button",
+                    "id": "38e9fb37-1c5e-4618-afe8-05a8eee1559e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "60c76e2b-3ee7-4616-9be7-57d067fa7619",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "20435da3-9a61-4e6c-af7c-3b1c94b58f76",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Breath In",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8ce8c32e-5a15-4958-b797-b29c4ba4c1f6",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9c60650e-a255-46c1-b0f3-9be5858d93fa",
+                    "path": "<Keyboard>/p",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
